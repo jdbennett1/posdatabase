@@ -1,0 +1,8 @@
+CREATE TABLE jb178339.TABLEORDER
+(
+    order_number VARCHAR(100) CONSTRAINT PK_order_number PRIMARY KEY,
+    menu_item VARCHAR(100) NOT NULL,
+    Price INTEGER NOT NULL CONSTRAINT CK_ITEM_PRICE CHECK (Price > 0),
+    item_quantity VARCHAR(100),
+    cost INTEGER,
+);
